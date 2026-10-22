@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capivara Adventure - Jogo de Plataforma 2D</title>
+  <meta name="description" content="Explore, colete itens e vença os desafios em Pixel Quest, um jogo de plataforma simples e divertido.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="topo">
+    <div class="container nav-content">
+      <a href="#topo" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+        <span>Capivara Adventure</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#topo" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#personagens" class="nav-link">Personagens</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="kicker">UM PEQUENO JOGO, GRANDES DESAFIOS</span>
+      <h1 class="hero-title">Capivara <span class="highlight">Adventure</span></h1>
+      <p class="hero-desc">Explore, colete itens e vença os desafios neste jogo de plataforma simples e divertido, feito com muito carinho.</p>
+      <button class="btn-play" id="btnJogar" type="button" onclick="window.location.href='jogo.html'">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        Jogar Agora
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- Sobre o Jogo Section -->
+  <section class="section section-light" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-info">
+          <div class="dash-indicator"></div>
+          <h2 class="section-title">Sobre o Jogo</h2>
+          <p class="section-text">Capivara Adventure é um jogo de plataforma 2D, criado com a plataforma de automação. O objetivo é simples: explore a floresta, elimine inimigos.</p>
+          <div class="badge-tag" id="badgeNavegador">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+            </svg>
+            Disponível para navegador
+          </div>
+        </div>
+        
+        <div class="cards-grid">
+          <div class="feature-card">
+            <div class="icon-circle icon-blue">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+              </svg>
+            </div>
+            <h3>Plataforma 2D</h3>
+            <p>Mecânicas simples e divertidas.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-circle icon-purple">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+              </svg>
+            </div>
+            <h3>Colete Moedas</h3>
+            <p>Junte moedas e desbloqueie conquistas.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-circle icon-green">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                <path d="M14 6l-3.75 5 2.85 3.8-1.6 1.2L7 10l-6 8h22L14 6z"/>
+              </svg>
+            </div>
+            <h3>Vá até o Final</h3>
+            <p>Complete as fases e vença o desafio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personagens Section -->
+  <section class="section section-dark" id="personagens">
+    <div class="container">
+      <div class="dash-indicator"></div>
+      <h2 class="section-title text-white">Personagens</h2>
+      <p class="section-subtitle">Conheça o herói da nossa aventura!</p>
+
+      <div class="character-card">
+        <div class="avatar-box">
+          <img src="assets/shared-0-sheet3.webp" alt="Alex Pixel Character">
+        </div>
+        <div class="character-details">
+          <h3 class="character-name">Capibara</h3>
+          <span class="character-role">Herói</span>
+          <p class="character-desc">Corajoso e determinado, Capibara está sempre pronto para novas aventuras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria Section -->
+  <section class="section section-light" id="galeria">
+    <div class="container">
+      <div class="dash-indicator"></div>
+      <h2 class="section-title">Galeria</h2>
+      <p class="section-subtitle-light">Confira algumas imagens do jogo.</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/capivara_tatica.png" alt="Fase da Colina e Árvores" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/ce8fdaa9-8aa1-4d5a-a9f3-c74450c4b2e8.jpeg" alt="Fase do Pôr do Sol" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/Captura de tela 2026-10-22 165554.png" alt="Fase da Caverna Noturna" class="gallery-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">© 2025 Pixel Quest. Todos os direitos reservados.</p>
+      <div class="footer-socials">
+        <!-- YouTube -->
+        <a href="#topo" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="#topo" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <!-- Link / Website -->
+        <a href="#topo" aria-label="Website">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s2.24-5-5-5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+ 
+
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.Platform,
+		C3.Behaviors.scrollto,
+		C3.Plugins.TiledBg,
+		C3.Behaviors.solid,
+		C3.Plugins.Keyboard,
+		C3.Plugins.Shape3D,
+		C3.Plugins.Model3D,
+		C3.Behaviors.Flash,
+		C3.Behaviors.Bullet,
+		C3.Plugins.Tilemap,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.Sprite.Acts.SetMirrored,
+		C3.Plugins.Sprite.Cnds.IsMirrored,
+		C3.Plugins.Sprite.Acts.Spawn,
+		C3.Plugins.Sprite.Acts.SetAngle,
+		C3.Plugins.System.Acts.Wait
+	];
+};
+self.C3_JsPropNameTable = [
+	{Plataforma: 0},
+	{CentrarEm: 0},
+	{Jogador: 0},
+	{Sólido: 0},
+	{PlanoDeFundoEmBlocos: 0},
+	{Tomate: 0},
+	{Teclado: 0},
+	{Forma3D: 0},
+	{Modelo3D: 0},
+	{Modelo3D2: 0},
+	{Forma3D2: 0},
+	{Forma3D3: 0},
+	{Forma3D4: 0},
+	{Forma3D5: 0},
+	{Forma3D6: 0},
+	{Piscar: 0},
+	{Sprite: 0},
+	{Projétil: 0},
+	{Sprite2: 0},
+	{Mosaico: 0},
+	{Mosaico2: 0},
+	{Mosaico3: 0},
+	{Sprite3: 0}
+];
+
+self.InstanceType = {
+	Jogador: class extends self.ISpriteInstance {},
+	PlanoDeFundoEmBlocos: class extends self.ITiledBackgroundInstance {},
+	Tomate: class extends self.ISpriteInstance {},
+	Teclado: class extends self.IInstance {},
+	Forma3D: class extends self.I3DShapeInstance {},
+	Modelo3D: class extends self.I3DModelInstance {},
+	Modelo3D2: class extends self.I3DModelInstance {},
+	Forma3D2: class extends self.I3DShapeInstance {},
+	Forma3D3: class extends self.I3DShapeInstance {},
+	Forma3D4: class extends self.I3DShapeInstance {},
+	Forma3D5: class extends self.I3DShapeInstance {},
+	Forma3D6: class extends self.I3DShapeInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Mosaico: class extends self.ITilemapInstance {},
+	Mosaico2: class extends self.ITilemapInstance {},
+	Mosaico3: class extends self.ITilemapInstance {},
+	Sprite3: class extends self.ISpriteInstance {}
+}
