@@ -73,9 +73,11 @@ html, body {
 }
 
 .logo-icon {
-  width: 28px;
-  height: 28px;
+  font-size: 1.5rem;
   color: var(--accent-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links {
@@ -749,6 +751,13 @@ html, body {
   transition: transform 0.2s;
 }
 
+.contact-icon-box i {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-card-btn:hover .contact-icon-box {
   transform: scale(1.08);
 }
@@ -1216,6 +1225,16 @@ html, body {
 .footer-socials a:hover {
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+.footer-socials a i {
+  font-size: 1.25rem;
+}
+
+.about-card-icon i,
+.icon-circle i,
+.item-icon-box i {
+  font-size: 22px;
 }
 
 /* ---------------- Responsividade Unificada ---------------- */
