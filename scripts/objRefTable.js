@@ -19,7 +19,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsMirrored,
 		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.Sprite.Acts.SetAngle,
-		C3.Plugins.System.Acts.Wait
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Cnds.EveryTick
 	];
 };
 self.C3_JsPropNameTable = [
@@ -45,7 +46,8 @@ self.C3_JsPropNameTable = [
 	{Mosaico: 0},
 	{Mosaico2: 0},
 	{Mosaico3: 0},
-	{Sprite3: 0}
+	{Sprite3: 0},
+	{Sprite4: 0}
 ];
 
 self.InstanceType = {
@@ -66,5 +68,6 @@ self.InstanceType = {
 	Mosaico: class extends self.ITilemapInstance {},
 	Mosaico2: class extends self.ITilemapInstance {},
 	Mosaico3: class extends self.ITilemapInstance {},
-	Sprite3: class extends self.ISpriteInstance {}
+	Sprite3: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {}
 }

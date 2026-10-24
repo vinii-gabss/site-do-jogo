@@ -1534,8 +1534,8 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => 0,
 		() => 1,
-		() => "bala",
 		() => "faizca",
+		() => "bala",
 		() => 180,
 		() => 0.08
 ];

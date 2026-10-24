@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagens - Capivara Adventure</title>
+  <meta name="description" content="Conheça o herói Capibara, seus atributos e os elementos do mundo de Capivara Adventure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="topo">
+    <div class="container nav-content">
+      <a href="index.html" class="logo" id="logoLink">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+        <span>Capivara Adventure</span>
+      </a>
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" id="navSobreMim">Sobre mim</a></li>
+          <li><a href="sobre.html" class="nav-link" id="navSobre">Sobre o Jogo</a></li>
+          <li><a href="personagens.html" class="nav-link active" id="navPersonagens">Personagens</a></li>
+          <li><a href="galeria.html" class="nav-link" id="navGaleria">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner do Cabeçalho da Página -->
+  <div class="page-header">
+    <div class="container">
+      <span class="kicker">HERÓI & HABITANTES DA FLORESTA</span>
+      <h1 class="page-header-title">Personagens</h1>
+      <p class="page-header-desc">Conheça o protagonista da nossa história e os itens e perigos que habitam cada canto da floresta.</p>
+    </div>
+  </div>
+
+  <!-- Conteúdo Principal de Personagens -->
+  <main class="section section-dark">
+    <div class="container">
+      <div class="characters-layout">
+        
+        <!-- Ficha do Herói Principal -->
+        <div class="character-card-detailed">
+          <div class="character-hero-header">
+            <div class="avatar-box-lg">
+              <img src="assets/shared-0-sheet3.webp" alt="Capibara Herói">
+            </div>
+            <div>
+              <span class="character-role">Protagonista / Herói Lendário</span>
+              <h2 class="character-name" style="font-size: 2rem; margin-top: 4px;">Capibara</h2>
+              <p style="color: var(--text-light-muted); font-size: 0.95rem; margin-top: 4px;">Guardião pacífico e destemido dos biomas fluviais.</p>
+            </div>
+          </div>
+
+          <p class="section-text" style="color: #cbd5e1; margin-bottom: 24px;">
+            Sempre calmo e focado, Capibara decidiu deixar seu lago tranquilo quando a paz da floresta foi ameaçada. Equipado com sua incrível agilidade e saltos precisos, ele salta plataformas, desvia de armadilhas e coleta relíquias ancestrais para restaurar o equilíbrio do seu lar.
+          </p>
+
+          <h3 style="color: #ffffff; font-size: 1.15rem; font-weight: 700; margin-bottom: 14px;">Atributos do Herói</h3>
+          
+          <div class="stats-list">
+            <div class="stat-row">
+              <div class="stat-label-wrap">
+                <span>Velocidade de Corrida</span>
+                <span>85%</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="stat-row">
+              <div class="stat-label-wrap">
+                <span>Alcance do Pulo</span>
+                <span>90%</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="stat-row">
+              <div class="stat-label-wrap">
+                <span>Determinação e Coragem</span>
+                <span>100%</span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-fill" style="width: 100%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elementos & Interações do Jogo -->
+        <div>
+          <div class="dash-indicator"></div>
+          <h3 class="section-title text-white" style="font-size: 1.6rem; margin-bottom: 8px;">Itens & Desafios</h3>
+          <p class="section-subtitle" style="margin-bottom: 20px;">Fique atento a tudo o que você encontrará pelo caminho:</p>
+
+          <div class="items-grid">
+            <!-- Item 1: Moedas Douradas -->
+            <div class="item-card">
+              <div class="item-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"/>
+                </svg>
+              </div>
+              <div class="item-info">
+                <h4>Moedas Douradas</h4>
+                <p>Relíquias espalhadas pelo mapa que garantem pontos e conquistas extras.</p>
+              </div>
+            </div>
+
+            <!-- Item 2: Espinhos e Armadilhas -->
+            <div class="item-card">
+              <div class="item-icon-box" style="color: #ef4444; background: rgba(239, 68, 68, 0.1);">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+                  <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                </svg>
+              </div>
+              <div class="item-info">
+                <h4>Obstáculos da Floresta</h4>
+                <p>Desfiladeiros profundos e perigos que exigem sincronia no pulo.</p>
+              </div>
+            </div>
+
+            <!-- Item 3: Bandeira Final -->
+            <div class="item-card">
+              <div class="item-icon-box" style="color: #10b981; background: rgba(16, 185, 129, 0.1);">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+                  <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/>
+                </svg>
+              </div>
+              <div class="item-info">
+                <h4>Ponto de Conclusão</h4>
+                <p>O portal e totem de chegada que selam a vitória de cada etapa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA Banner -->
+  <section class="cta-section">
+    <div class="container cta-content">
+      <h2 class="cta-title">Controle o Herói Agora</h2>
+      <p class="cta-text">Capibara está aguardando você para desbravar os cenários e alcançar a pontuação máxima!</p>
+      <button class="btn-play" id="btnJogarPersonagens" type="button" onclick="window.location.href='game/indexx.html'">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        Jogar Agora
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-copy">© 2025 Capivara Adventure. Todos os direitos reservados.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Website">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s2.24-5-5-5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
